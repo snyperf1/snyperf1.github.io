@@ -41,6 +41,11 @@ section#plans {
   border-radius: 2px;
 }
 
+.sp {
+border-radius: 53px; /* Adjust the value as needed for more rounded corners */
+}
+
+
 section2 {
   display: grid;
   grid-template-columns: auto 1fr;

@@ -6,6 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   transition: background-color 1s ease; /* Transition for background color change */
+  
 }
 
 section img {
@@ -43,6 +44,7 @@ section img {
 .light-theme .section {
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 .light-theme h2 {
