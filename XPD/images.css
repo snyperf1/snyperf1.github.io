@@ -1,0 +1,54 @@
+.school {
+  border-radius: 40px; /* Adjust the value as needed for more rounded corners */
+}
+
+.school-others {
+  border-radius: 40px; /* Adjust the value as needed for more rounded corners */
+  width: 45%;
+  padding: 10px;
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo-container img {
+  width: 45%; /* Adjust the width as needed */
+  height: auto;
+  padding: 10px;
+}
+
+section#plans {
+  height: 20%;
+  width: auto;
+}
+
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some spacing between the logo and the title */
+  border-radius: 2px;
+}
+
+.logo-others{
+  width: auto; /* Adjust the width as needed */
+  height: 100px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some spacing between the logo and the title */
+  border-radius: 2px;
+}
+
+section2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px; /* Adjust the gap as needed */
+}
+
+.logo-others {
+  height: 100px; /* Adjust the height as needed */
+}
+
