@@ -1,4 +1,4 @@
-section, .section, img, button {
+section, .section, img, button, sectionO, sectionR {
     transition: transform 0.3s ease;
   }
   

@@ -162,6 +162,7 @@ section {
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 section g {
@@ -295,6 +296,7 @@ body {
     text-align: center;
     font-size: 16px;
     padding: 5px;
+    margin-bottom: 20px;
   }
 
 
@@ -332,17 +334,17 @@ body {
   .button.direct-download-FA {
     display: block;
     padding: 10px 20px;
-    background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 30px;
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    background-color: #000000;
   }
   
   .button.direct-download-FA:hover {
-    background-color: #0056b3;
+    background-color: #333333;
   }
   
 .grid section {
@@ -505,11 +507,6 @@ header.fade-in {
   border-radius: 4px;
 }
 
-
-section {
-    margin-bottom: 20px;
-}
-
 h2, h3 {
     font-size: 24px;
     font-weight: bold;
@@ -521,4 +518,25 @@ p {
 
 strong {
     font-weight: bold;
+}
+
+
+sectionR {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+sectionO {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
