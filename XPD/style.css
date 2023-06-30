@@ -1,219 +1,193 @@
 /* Common styles */
-
 body {
   font-family: 'SF Pro Display', sans-serif;
   margin: 0 20px;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color 1s ease; /* Transition for background color change */
-  
+  transition: background-color 1s ease;
 }
 
 section img {
-  border-radius: 10px; /* Adjust the value to control the roundness of the corners */
+  border-radius: 10px;
 }
 
-
-.light-theme {
-  background-color: #adadad; /* Light theme background color */
-}
-
-/* Styles specific to light theme */
-
-.light-theme header {
+section,
+section g {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
   background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #0404044e;
 }
 
-.light-theme h1 {
+section g {
+  max-width: 100%;
+}
+
+.grid section {
+  flex: 1 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.grid-cca > section {
+  padding: 10px;
+  text-align: center;
+  height: 0;
+  padding-bottom: 100%;
+  color: #fff;
+}
+
+section,
+header {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+section.fade-in,
+header.fade-in {
+  opacity: 1;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+}
+
+#strengths > section:nth-child(-n+4) {
+  border: rgb(255, 0, 0) 5px solid;
+}
+
+#strengths > section:nth-child(n+5) {
+  border: orange 5px solid;
+}
+
+#experience > section section h3 {
+text-align: center;
+}
+
+/* Styles specific to light theme - removed */
+
+/* Common styles */
+body {
+  background-color: #737373;
+  position: relative;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
   color: #333333;
+  font-size: 32px;
+  text-align: center;
 }
 
-.light-theme .button.contact-button {
+.button.contact-button {
   background-color: black;
   color: black;
 }
 
-.light-theme nav {
-  background-color: #CCCCCC;
-}
-
-.light-theme li a {
-  color: #FFFFFF;
-}
-
-.light-theme .section {
-  background-color: #FFFFFF;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-}
-
-.light-theme h2 {
-  color: #333333;
-}
-
-.light-theme p {
-  color: #181818;
-}
-
-.light-theme .custom-link {
-  color: #333333;
-}
-
-.light-theme .button.fom {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.light-theme .button.fom:hover {
-  background-color: #0056b3;
-}
-
-.light-theme .button.direct-download {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.light-theme .button.direct-download:hover {
-  background-color: #0056b3;
-}
-
-/* Common styles */
-
-body {
-    font-family: 'SF Pro Display', sans-serif;
-    background-color: #737373;
-    margin: 0;
-    padding: 0;
-    position: relative; /* Added for bottom navigation positioning */
-}
-
-header {
-    background-color: #FFFFFF;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-h1 {
-    color: #333333;
-    font-size: 32px;
-    text-align: center;
-}
-
-.button.contact-button {
-    background-color: #black;
-    color: #black;
-  }
-  
-
 nav {
-    background-color: #CCCCCC;
-    padding: 10px;
-    border-radius: 30px;
-    position: fixed;
-    bottom: 40px;
-    left: 20px;
-    right: 20px;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #CCCCCC;
+  padding: 10px;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 li {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    padding: 8px 16px;
-    border-radius: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
 }
 
 li a.hover {
-    background-color: #999999;
+  background-color: #999999;
 }
 
 li a.active {
-    background-color: #999999;
+  background-color: #999999;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-section g {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 h2 {
-    color: #333333;
-    font-size: 24px;
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center;
+  color: #333333;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 p {
-    color: #181818;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
+  color: #181818;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .profile-pic img {
-  border-radius: 10px; /* Adjust the value to control the roundness of the corners */
-  width: 100%; /* Adjust the width as per your requirement */
-  height: 30%; /* Adjust the height as per your requirement */
-  object-fit: cover; /* Ensures the image fills the container without distortion */
+  border-radius: 10px;
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
 }
-
 
 html {
-    scroll-behavior: smooth;
-  }
-
+  scroll-behavior: smooth;
+}
 
 body {
-    margin: 0 20px;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #adadad; /* Initial background color */
-    transition: background-color 1s ease; /* Transition for background color change */
+  background-color: #adadad;
+  margin: 0 20px;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 1s ease;
 }
+
 .center {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes wave {
@@ -234,204 +208,135 @@ body {
   margin: 10px;
   animation: wave 1.45s linear infinite;
   border-radius: 20px;
-  animation-delay: 0s; /* Updated */
+  animation-delay: 0s;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: #1a1a1a;
+  background-color: #CCCCCC;
+  border: 2px solid #5e5e5e;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #999999;
+}
+
+.custom-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+}
+
+.custom-link span {
+  margin-right: 5px;
+}
+
+.custom-link .icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.download-button {
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  
+}
+
+.download-button-FA {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
 }
 
 
+.button.fom {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px
+  
+}
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .contact-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    color: #1a1a1a;
-    background-color: #CCCCCC;
-    border: 2px solid #5e5e5e;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-button:hover {
-    background-color: #999999;
-  }
-  
+.button.fom:hover {
+  background-color: #0056b3;
+}
 
-  .custom-link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333333;
-  }
+.button.direct-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px
   
-  .custom-link span {
-    margin-right: 5px;
-  }
-  
-  .custom-link .icon {
-    width: 16px;
-    height: 16px;
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 1.5;
-  }
-  
-  .download-button {
-    text-align: center;
-    font-size: 16px;
-    padding: 5px;
-    
-  }
+}
 
-  .download-button-FA {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px;
-    margin-bottom: 20px;
-  }
+.button.direct-download:hover {
+  background-color: #0056b3;
+}
 
 
-  
-  
-  .button.fom {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px
-    
-  }
-  
-  .button.fom:hover {
-    background-color: #0056b3;
-  }
+.button.direct-download-FA {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #000000;
+}
 
-  .button.direct-download {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px
-    
-  }
-  
-  .button.direct-download:hover {
-    background-color: #0056b3;
-  }
-
-
-  .button.direct-download-FA {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    background-color: #000000;
-  }
-  
-  .button.direct-download-FA:hover {
-    background-color: #333333;
-  }
-  
-.grid section {
-    flex: 1 0 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-  
+.button.direct-download-FA:hover {
+  background-color: #333333;
 }
 
 .grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 #experience {
-    padding: 20px;
-    background-color: #f5f5f5;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .slide-toggle {
-    overflow: hidden;
-    max-height: 100px;
-    transition: max-height 0.5s ease-out;
-  }
-  
-  .description-box {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-  }
+  padding: 20px;
+  background-color: #f5f5f5;
+}
 
-  .section-header {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .more-button {
-    background-color: transparent;
-    border: none;
-    color: #147efb;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  .more-button:focus {
-    outline: none;
-  }
-  
-  .more-button .icon {
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-  }
-  
-  .description-box.show .more-button .icon {
-    transform: rotate(180deg);
-  }
-  
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
-
-.scrollable-list {
-  height: 200px;
-  overflow-y: scroll;
-  border-left: 2px solid #CCCCCC;
-  padding-left: 10px;
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -440,55 +345,16 @@ ul {
   margin: 0;
 }
 
-.achievement {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #CCCCCC;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.achievement p {
-  margin: 0;
-  flex-grow: 1;
-}
-
 .grid-cca {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 10px;
 }
 
-.video-container{
+.video-container {
   padding: 20px;
   border-radius: 10%;
   overflow: hidden;
-
-}
-
-.grid-cca > section {
-  padding: 10px;
-  text-align: center;
-  height: 0;
-  padding-bottom: 100%; /* Maintain 1:1 aspect ratio */
-  color: #fff;
-}
-
-section,
-header {
-  opacity: 0; /* Initially hide the sections and header */
-  transition: opacity 1s ease-in-out; /* Add a smooth transition */
-}
-
-section.fade-in,
-header.fade-in {
-  opacity: 1; /* Make the sections and header visible */
 }
 
 .view-more-button {
@@ -500,43 +366,180 @@ header.fade-in {
   text-align: center;
   text-decoration: none;
   display: inline;
-  width: 100%; /* Adjust width as per requirement */
+  width: 100%;
   height: auto;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
 }
 
-h2, h3 {
-    font-size: 24px;
-    font-weight: bold;
+h2,
+h3 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+#experience {
+  padding: 20px;
+  background-color: rgb(244, 244, 244);
 }
 
 
-sectionR {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #FFFFFF;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+img {
+  height: auto;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;  /* Place tooltip above the button */
+  left: 50%;
+  margin-left: -60px;  /* Use margin to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.school {
+  border-radius: 40px; /* Adjust the value as needed for more rounded corners */
+}
+
+.school-others {
+  border-radius: 40px; /* Adjust the value as needed for more rounded corners */
+  width: 45%;
+  padding: 10px;
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo-container img {
+  width: 45%; /* Adjust the width as needed */
+  height: auto;
+  padding: 10px;
+}
+
+section#plans {
+  height: 20%;
+  width: auto;
+}
+
+
+#experience > section .logo {
+height: auto;
+display: inline-block;
+width: 100px;
+}
+
+.logo-others{
+  width: auto; /* Adjust the width as needed */
+  height: 100px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some spacing between the logo and the title */
+  border-radius: 2px;
+}
+
+.sp {
+border-radius: 53px; /* Adjust the value as needed for more rounded corners */
+}
+
+
+section2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px; /* Adjust the gap as needed */
+}
+
+section3 {
+  display: flex;
+  align-items: center;
+  column-gap: 10px; /* Adjust the gap as needed */
+}
+
+.logo-others {
+  height: 100px; /* Adjust the height as needed */
+}
+
+.main-section {
   margin-bottom: 20px;
 }
 
-sectionO {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #FFFFFF;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-bottom: 20px;
+.main-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.category-section {
+  margin-bottom: 10px;
+}
+
+.category-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.category-description {
+  font-size: 18px;
+}
+
+.important-text {
+  font-weight: bold;
+  
+}
+
+.main-heading, .category-heading {
+  text-align: center;
+}
+
+section, .section, img, button{
+  transition: transform 0.3s ease;
+}
+
+section:hover, .section:hover, img:hover, button:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Updated box-shadow properties */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px; /* Adjust the gap as needed */
+}
+
+.container img {
+  max-width: 100px; /* Adjust the width of the logo as needed */
 }
