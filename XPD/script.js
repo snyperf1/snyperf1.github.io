@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.onload = function() {
-    document.body.style.backgroundColor = '#f3f3f3'; /* Updated background color */
+    document.body.style.backgroundColor = '#f3f3f380'; /* Updated background color */
     setTimeout(function() {
         document.querySelector('.center').style.display = 'none'; /* Updated background color */
     }, 1400); // Delay in milliseconds (1,5 second)

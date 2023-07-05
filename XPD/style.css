@@ -13,7 +13,7 @@ section img {
 
 section,
 section g {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 15px;
   background-color: #FFFFFF;
@@ -542,4 +542,8 @@ section:hover, .section:hover, img:hover, button:hover{
 
 .container img {
   max-width: 100px; /* Adjust the width of the logo as needed */
+}
+
+.category-heading {
+text-align: left;
 }
