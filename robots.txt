@@ -5,4 +5,4 @@ Disallow: /private/
 Allow: /f1/
 Allow: /XPD/
 
-Sitemap: https://snyperf1.github.io/sitemap.xml
+Sitemap: https://snyperf1.github.io/?sitemap=1
