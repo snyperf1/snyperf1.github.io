@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Allow: /f1/
+Allow: /XPD/
+
+Sitemap: https://snyperf1.github.io/sitemap.xml
