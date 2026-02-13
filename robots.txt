@@ -2,7 +2,11 @@ User-agent: *
 Disallow: /admin/
 Disallow: /login/
 Disallow: /private/
-Allow: /f1/
-Allow: /XPD/
 
-Sitemap: https://5ujgoififj.execute-api.ap-southeast-1.amazonaws.com/default/sitemap
+Allow: /
+Allow: /XPD/
+Allow: /images/
+Allow: /Keynote/
+Allow: /certs/
+
+Sitemap: https://snyperf1.github.io/sitemap.xml
